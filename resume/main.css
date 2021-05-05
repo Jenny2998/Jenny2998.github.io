@@ -1,0 +1,228 @@
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 390;
+    color: #AB8779;
+    background-image: url(graphic-resume.png);
+    font-size: 18pt;
+}
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #AB8779;
+    font-size: 12pt;
+
+}
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 12pt;
+
+
+}
+h4{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 11pt;
+    text-align: left;
+    line-height: 1.4rem;
+    margin-top: 8%;
+
+    /* margin-left: 900px; */
+
+
+}
+
+#img-logo{
+    transform: scale(1.2);
+    transform-origin: top left;
+    /* margin-left: 90px; */
+}
+.school{
+
+font-weight: 500;
+}
+.bold{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color:rgb(97, 97, 97)
+}
+
+.grid-container {
+    
+    display: grid;
+    margin-left:10%;
+    /* gap: 30px; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    grid-template-areas:
+      "h h h h h"
+      "e e v v v"
+      "e e g g g"
+      "w w s s s"
+      "w w l l l"
+      ". . r r r";
+  }
+  
+/* For desktop */
+@media screen and (min-width: 800px) {
+ 
+    .e { 
+        padding-right: 30%;  
+    }
+    .w { padding-right: 30%; 
+      }
+    
+}
+
+  .h { grid-area: h; 
+    /* margin-right: 100px; */
+}
+
+  .v { grid-area: v; 
+/* margin-right: 300px; */
+}
+  
+  .g { grid-area: g; 
+    /* margin-top: -20px; */
+    line-height: 1.5em;
+
+}
+  
+  .s { grid-area: s;
+/* margin-top: -10px; */
+}
+  
+  .l { grid-area: l;
+/* margin-top: -30px;  */
+}
+  
+  .e { grid-area: e; 
+    /* margin-left: 100px; */
+}
+  
+  .w { grid-area: w; 
+  /* margin-top: -190px; */
+  /* margin-left: 100px; */
+  
+  
+}
+  .r { grid-area: r; 
+/* margin-top: 50px; */
+}
+#img {
+    margin-left: 100px;
+    margin-bottom: -70px;
+    max-width: 200%;
+    height: auto;
+}  
+#line{
+    margin-top: 50px;
+    margin-bottom: -40px;
+    margin-left:160px;
+    transform: rotate(90deg);
+}
+/* .grid-container{
+    position: relative; left: -100px; top: 70px; 
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "h h . . ."
+    "e v . . ."
+    "w a . . ."
+    "s l . . ."
+    "r r";
+} */
+
+@media screen and (max-width: 800px) {
+    .grid-container{
+        display: grid;
+        margin-left:8%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "h"
+        "e"
+        "w"
+        "v"
+        "g"
+        "a"
+        "s"
+        "l"
+        "r";
+    }
+}
+      
+.header { grid-area: h; 
+}
+
+.e { grid-area: e;  
+}
+
+.w { grid-area: w; 
+  }
+
+.v { grid-area: v; 
+/* margin-top: 900px; */
+}
+  
+.g { grid-area: g; 
+    
+}
+  
+.s { grid-area: s;
+}
+  
+.l { grid-area: l;
+}
+
+.r { grid-area: r; 
+
+}
+#img {
+    margin-left: 30px;
+    margin-bottom: -70px;
+} 
+
+/* h4{
+    margin-left: 40px;
+    margin-top: 50px;
+}  */
+
+
+
+/* .education{
+    grid-area: e;
+
+}
+
+.workexperience{
+    grid-area: w;
+
+}
+
+.volunteerexperience{
+    grid-area: v;
+
+}
+
+.awards{
+    grid-area: g;
+
+}
+
+.skills{
+    grid-area:s;
+
+}
+
+.languages{
+    grid-area: l;
+
+}
+
+.references{
+    grid-area: r;
+} */
